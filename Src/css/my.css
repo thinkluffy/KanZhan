@@ -1,21 +1,46 @@
-
 .nav-icon {
     width: 45px;
     margin-top: -4px;
 }
 
 .grid {
-    padding: 20px;
+    padding: 30px;
+    padding-top: 115px;
 }
 
 .grid-item {
-    width: 100px;
-    height: 100px;
+    width: 89px;
+    height: 89px;
     float: left;
-    background-color: red;
+    /*background-color: red;*/
     margin: 20px;
 }
 
 .clear {
     clear: both;
+}
+
+/*p8*/
+#btn_back {
+    position: absolute;
+    top: 55%;
+    left: 20px;
+}
+
+#btn_updown {
+    position: absolute;
+    top: 55%;
+    right: 20px;
+}
+
+#btn_camera {
+    position: absolute;
+    top: 55%;
+    right: 110px;
+}
+
+#btn_photos {
+    position: absolute;
+    top: 55%;
+    right: 60px;
 }

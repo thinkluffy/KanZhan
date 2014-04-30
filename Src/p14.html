@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Grid Test</title>
+        <title>P14</title>
 
         <!-- Sets initial viewport load and disables zooming  -->
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -20,22 +20,26 @@
     </head>
     <body>
         <!-- Make sure all your bars are the first things in your <body> -->
-        <header class="bar bar-nav">
-            <a class="icon icon-left-nav pull-left" href="index.html" data-transition="slide-out"> Left </a>
-            <h1 class="title">Grid</h1>
+        <header class="bar bar-nav" style="background-image: url('img/p14/btn_bottom.png');">
+            <a class="icon pull-left" href="p6.html" data-transition="slide-out">
+                <img src="img/p14/btn_left.png" class="nav-icon">
+            </a>
+            <h1 class="title"></h1>
 
         </header>
 
         <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
         <div class="content">
-            <div class="grid">
-                <a class="grid-item" href="navigation.html" data-transition="slide-in"></a> 
-                <a class="grid-item" href="navigation.html" data-transition="slide-in"></a> 
-                <a class="grid-item" href="navigation.html" data-transition="slide-in"></a> 
-                <a class="grid-item" href="navigation.html" data-transition="slide-in"></a> 
-                <a class="grid-item" href="navigation.html" data-transition="slide-in"></a> 
-                <a class="grid-item" href="navigation.html" data-transition="slide-in"></a>
-            </div>
+            <img src="img/p14/background_word.png" width="320px" height="445px">
+            
+            <table style="position: absolute; left: 0px; bottom: 0; width: 100%; height: 80px; background-color: rgb(5, 157, 165); text-align: center;">
+                <tr>
+                    <td><img src="img/p14/btn_popup1.png"></td>
+                    <td><img src="img/p14/btn_popup2.png"></td>
+                    <td><img src="img/p14/btn_popup3.png"></td>
+                    <td><img src="img/p14/btn_popup4.png"></td>
+                </tr>
+            </table>
         </div>
 
     </body>
