@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Ratchet template page</title>
+        <title>Navigation</title>
 
         <!-- Sets initial viewport load and disables zooming  -->
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -20,31 +20,26 @@
     </head>
     <body>
 
-        <!-- Make sure all your bars are the first things in your <body> -->
-        <header class="bar bar-nav">
-            <h1 class="title">KanZhan</h1>
-        </header>
-
         <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
         <div class="content">
-            <p class="content-padded">
-                Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:
-            </p>
-            <div class="card">
-                <ul class="table-view">
-                    <li class="table-view-cell">
-                        <a class="push-right" href="p1.html" data-transition="slide-in"> <strong>p1</strong> </a>
-                    </li>
-                    <li class="table-view-cell">
-                        <a class="push-right" href="p7.html" data-transition="slide-in"> <strong>P7</strong> </a>
-                    </li>
-                    <li class="table-view-cell">
-                        <a class="push-right" href="grid.html" data-transition="slide-in"> <strong>Grid</strong> </a>
-                    </li>
-                    <li class="table-view-cell">
-                        <a class="push-right" href="https://twitter.com/goratchet"> <strong>Ratchet on Twitter</strong> </a>
-                    </li>
-                </ul>
+            <div class="slider" id="mySlider">
+                <div class="slide-group">
+                    <div class="slide">
+                        <img src="img/p1/nav1.png"> 
+                    </div>
+                    <div class="slide">
+                        <img src="img/p1/nav2.png">
+                    </div>
+                    <div class="slide">
+                        <img src="img/p1/nav3.png">
+                    </div>
+                    <div class="slide">
+                        <img src="img/p1/nav4.png">
+                        <span style="position: absolute; top: 80%; left: 1085px; width: 100%;"> 
+                            <a href="p6.html"><img src="img/p1/btn_start.png"></a>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
 
