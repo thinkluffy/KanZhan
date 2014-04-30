@@ -3,3 +3,19 @@
     width: 45px;
     margin-top: -4px;
 }
+
+.grid {
+    padding: 20px;
+}
+
+.grid-item {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: red;
+    margin: 20px;
+}
+
+.clear {
+    clear: both;
+}
