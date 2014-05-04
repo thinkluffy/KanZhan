@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>P7</title>
+        <title>LaunchImage</title>
 
         <!-- Sets initial viewport load and disables zooming  -->
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -16,26 +16,23 @@
         <link href="css/my.css" rel="stylesheet">
 
         <!-- Include the compiled Ratchet JS -->
-        <script src="js/ratchet.min.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
     </head>
     <body>
-        <!-- Make sure all your bars are the first things in your <body> -->
-        <header class="bar bar-nav" style="background-image: url('img/p7/btn_bottom.png');">
-            <a class="icon pull-left" href="p6.html" data-transition="slide-out">
-                <img src="img/p7/btn_left.png" class="nav-icon">
-            </a>
-            <a class="icon pull-right" href="p8.html" data-transition="slide-in">
-                <img src="img/p7/btn_right.png" class="nav-icon">
-            </a>
-            
-            <h1 class="title"></h1>
-
-        </header>
 
         <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-        <div class="content">
-            <img src="img/p7/background_main.png" width="320px" height="525px">
+        <div class="content" id="maincontent">
+            <img src="img/p5/background_main.png" width="320px" height="570px">
         </div>
-
+        <script>
+            (function () {
+                $('#maincontent').fadeOut(1000, function() {
+                    var h = window.location.href;
+                    var baseUrl = h.substr(0, h.indexOf('p5'));
+                    
+                    window.location.href = baseUrl + 'p6.html';
+                });
+            })();
+        </script>
     </body>
 </html>
