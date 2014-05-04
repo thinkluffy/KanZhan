@@ -65,7 +65,14 @@ Serving HTTP on 0.0.0.0 port 8000 ...
  
 ### 3, 在Chrome上演示
 
-...
++ 1, 打开Chrome，访问http://__[IP]__:8000/index.html
+    
+    IP填入在步骤1中查询到的IP。
+
++ 2, 在打开的网页上右击，选择"Inspect Eelment"
++ 3, 在调试界面中，点击右上角的"Show Console"按钮，调出console
++ 4, 在console中，选择Elemulation面板，Device选成App iPhone 5, 然后点击Emulate按钮
++ 5, 点击右上角的"undock into separate window"按钮，以获得更好的演示效果(可选) 
 
 ### 4, 在iPhone上演示
 
