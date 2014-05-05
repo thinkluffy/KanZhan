@@ -38,20 +38,20 @@
         <div class="content">
             <img src="img/p11/background_main.png" width="320px" height="525px">
             
-            <a id="p11_updownButton" style="position: absolute; bottom: 10px; right: 20px;" onclick="p1_updownButtonClicked()">
+            <a id="p11_updownButton" style="position: absolute; bottom: 10px; right: 20px;" onclick="p11_updownButtonClicked()">
                 <img src="img/p11/btn_updown.png">
             </a>
             
             <table id="p11_panel" style="position: absolute; left: 0px; bottom: -80px; width: 100%; height: 80px; background-color: rgb(161, 54, 54); text-align: center;">
                 <tr>
-                    <td><img src="img/p12/btn_popup1.png"></td>
-                    <td><img src="img/p12/btn_popup2.png"></td>
-                    <td><img src="img/p12/btn_popup3.png"></td>
-                    <td><img src="img/p12/btn_popup4.png"></td>
-                    <td><img src="img/p12/btn_popup5.png"></td>
+                    <td><a onclick="showToast('img/p12/btn_popup1-1.png')"><img src="img/p12/btn_popup1.png"></a></td>
+                    <td><a onclick="showToast('img/p12/btn_popup2-1.png')"><img src="img/p12/btn_popup2.png"></a></td>
+                    <td><a onclick="showToast('img/p12/btn_popup3-1.png')"><img src="img/p12/btn_popup3.png"></a></td>
+                    <td><a onclick="showToast('img/p12/btn_popup4-1.png')"><img src="img/p12/btn_popup4.png"></a></td>
+                    <td><a onclick="showToast('img/p12/btn_popup5-1.png')"><img src="img/p12/btn_popup5.png"></a></td>
                 </tr>
             </table>
-            
+            <img id="toast" src="img/p8/btn_popup1-1.png" style="position: absolute; top: 40%; left: 30%; display: none;">
         </div>
        
     </body>

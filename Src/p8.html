@@ -17,6 +17,8 @@
 
         <!-- Include the compiled Ratchet JS -->
         <script src="js/ratchet.min.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/my.js"></script>
 
     </head>
     <body>
@@ -26,22 +28,24 @@
             <a id="btn_back" class="icon pull-left" href="p7.html" data-transition="slide-out"> <img src="img/p8/btn_back.png"> </a>
             <a id="btn_camera" class="icon pull-left" data-transition="slide-out"> <img src="img/p8/btn_camera.png"> </a>
             <a id="btn_photos" class="icon pull-left" data-transition="slide-out"> <img src="img/p8/btn_photos.png"> </a>
-            <a id="btn_updown" class="icon pull-left" data-transition="slide-out"> <img src="img/p8/btn_up&down.png"> </a>
+            <a id="btn_updown" class="icon pull-left" data-transition="slide-out" onclick="p8_updownButtonClicked()"> <img src="img/p8/btn_up&down.png"> </a>
 
             <table style="position: absolute; bottom: 10px; left: 20px; width: 90%; height: 200px;">
                 <tr>
-                    <td><img src="img/p8/btn_popup1.png"></td>
-                    <td><img src="img/p8/btn_popup2.png"></td>
-                    <td><img src="img/p8/btn_popup3.png"></td>
-                    <td><img src="img/p8/btn_popup4.png"></td>
+                    <td><a onclick="showToast('img/p8/btn_popup1-1.png')"><img src="img/p8/btn_popup1.png"></a></td>
+                    <td><a onclick="showToast('img/p8/btn_popup2-1.png')"><img src="img/p8/btn_popup2.png"></a></td>
+                    <td><a onclick="showToast('img/p8/btn_popup3-1.png')"><img src="img/p8/btn_popup3.png"></a></td>
+                    <td><a onclick="showToast('img/p8/btn_popup4-1.png')"><img src="img/p8/btn_popup4.png"></a></td>
                 </tr>
                 <tr>
-                    <td><img src="img/p8/btn_popup5.png"></td>
-                    <td><img src="img/p8/btn_popup6.png"></td>
-                    <td><img src="img/p8/btn_popup7.png"></td>
-                    <td><img src="img/p8/btn_popup8.png"></td>
+                    <td><a onclick="showToast('img/p8/btn_popup5-1.png')"><img src="img/p8/btn_popup5.png"></a></td>
+                    <td><a onclick="showToast('img/p8/btn_popup6-1.png')"><img src="img/p8/btn_popup6.png"></a></td>
+                    <td><a onclick="showToast('img/p8/btn_popup7-1.png')"><img src="img/p8/btn_popup7.png"></a></td>
+                    <td><a onclick="showToast('img/p8/btn_popup8-1.png')"><img src="img/p8/btn_popup8.png"></a></td>
                 </tr>
             </table>
+            <img src="img/p8/background_keyboard.png" id="keyboard_panel" style="position: absolute; bottom: -218px; width: 100%;">
+            <img id="toast" src="img/p8/btn_popup1-1.png" style="position: absolute; top: 40%; left: 30%; display: none;">
         </div>
 
     </body>
